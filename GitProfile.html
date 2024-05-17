@@ -1,152 +1,148 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #CAD2C5;
-  }
-  
-  .banner {
-    background-color: #2F3D46;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    
-  }
-  
-  .banner.logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-  
-  .banner.text-container {
-    display:flex;
-    justify-content: center;
-    flex: 1;
-    font-stretch: expanded;
+<html lang="en">
 
+<head>
+  <style>
+    .git{
+    background-color: #cad2c5;
     
-  }
-  
-  .banner img {
-    margin-right: 10px;
-  }
-  
-  .banner h2 {
-    margin-top: 0;
+}
+.banner{
+    background-color: #2F3D46 ;
+    color:white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    letter-spacing: 5px;
+   font-weight:lighter;
+    height: 100px;
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.text{
+    margin:auto;
     
     
-  }
-  
-  .rectangle {
+}  
+.icon{
+    
+    padding: 15px;
+    
+}
+
+h3{
+    padding: 0px;
+    letter-spacing: 2px;
+    font-size: larger;
+    letter-spacing: 4px;
+    
+    
+}
+
+
+.banner div:nth-child(2){
+    padding: 5px;
+    margin-top: 15px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 70px;
+    padding: 40px;
+}
+
+
+
+.horr{
+    width: 250px;
+    height: 430px;
+    border: none;
     background-color: #353535;
+    border-radius: 20px;
     padding: 20px;
-    text-align: center;
-    width: 534px;
-    height: 906px;
-    border: radius 49%;
-    margin-left: 5%;
-    margin-top: 5%;
-  
-  }
-  .rectangle1 {
-    background-color: #353535;
-    padding: 20px;
+
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
     
-    width: 534px;
-    height: 906px;
-    border: radius 49%;
-    margin-left: 33%;
-    margin-top: -13.5%;
-  
-  }
-  .rectangle2 {
-    background-color: #353535;
-    padding: 20px;
     
-    width: 534px;
-    height: 906px;
-    border: radius 49%;
-    margin-left: 33%;
-    margin-top: -27%;
-  }
-  .rectangle3 {
-    background-color: #353535;
-    padding: 20px;
+}
+.icon{
+    padding: 15px;
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 100px;
     
-    width: 534px;
-    height: 906px;
-    border: radius 49%;
-    margin-left: 52%;
-    margin-top: -10%;
-  
-  }
-  .rectangle4 {
+}
+.box{
+    border: none;
+    width: 190px;
+    height: 120px;
+    border-radius: 10px;
     background-color: #353535;
-    padding: 20px;
+    margin-top: 20px;
+
+}
+#first{
+    background-color: #353535;
+    border-radius: 7px;
+    color:lightcyan;
+    width: 600px;
+    height: 32px;
+    margin-left:60px;
     
-    width: 534px;
-    height: 906px;
-    border: radius 49%;
-    margin-left: 71%;
-    margin-top: -10.0%;
-  
-  }
-  .searchbox {
-    background-color: #353535;
-    padding: 10px;
+}
+.bottom{
+    border: none;
+    border-radius: 20px;
+    background-color:#353535;
+    width: 774px;
+    height: 155px;
+    margin-top: 5px;
+}
+::placeholder{
+    letter-spacing: 3px;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    
+    font-weight: normal;
+}
+.search{
     height: 20px;
-    border-radius: 8px;
-    margin-left: 40%;
-    margin-top: -20.89%;
-    margin-right: 25%;
-  
-  }
-  .content {
-    padding: 20px;
-  }
-    </style>
-    <title>My GitHub Profile</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
+}
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Git.css">
+</head>
+<body>
+
+
+<div class="git">
     <div class="banner">
-      <div class="logo-container">
-        <img src="profile1.jpeg" alt="GitHub Logo" width="85" height="65" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%);">
-      </div>
-      <div class="text-container">
-        <h2>GITHUB</h2>
-      </div>
+        <div class="icon"><img src="profile1.jpeg" alt="" height="70px" width="90px"></div>
+        <div class="text"><h3>GITHUB</h3></div>
     </div>
-    <div class="rectangle"style="width: 270px; height: 480px; border-radius: 20px;">
-      
+    <div class="container">
+        <div class="horr"></div>
+        <div class="right">
+            <div class="search"><input type="text" placeholder="Search" id="first"></div>
+            <div class="three">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="bottom"></div>
+
+        </div>
     </div>
-    <div class="rectangle1"style="width: 710px; height: 135px; border-radius: 15px;">
-    </div>
-    <div class="rectangle2"style="width: 157px; height: 105px; border-radius: 15px;">
-    </div>
-    <div class="rectangle3"style="width: 157px; height: 105px; border-radius: 15px;">
-    </div>
-    <div class="rectangle4"style="width: 157px; height: 105px; border-radius: 15px;">
-    </div>
-   
-    <div class="content">
-  
-    </div>
-    <div class="searchbox">
-      <input type="text" id="search-box" placeholder="S e a r c h" style="width: 60px;   border-radius: 10px; border: 1px solid #353535; background-color: #353535; color: #fff; padding: 0 1px;">
-    </div>
-  </body>
+
+</div>
+</body>
 </html>
